@@ -1,7 +1,7 @@
 class Skillforge < Formula
   desc "A package manager for AI skills — build, publish, and install MCP-compatible skill binaries"
   homepage "https://github.com/ZenMicro-Tech/skillforge"
-  version "0.1.3"
+  version "0.1.5"
   license "Apache-2.0"
 
   on_macos do
