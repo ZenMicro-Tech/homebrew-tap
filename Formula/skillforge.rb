@@ -1,26 +1,26 @@
 class Skillforge < Formula
   desc "A package manager for AI skills — build, publish, and install MCP-compatible skill binaries"
   homepage "https://github.com/ZenMicro-Tech/skillforge"
-  version "0.1.8"
+  version "0.1.9"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ZenMicro-Tech/skillforge/releases/download/v#{version}/skillforge-aarch64-apple-darwin"
-      sha256 "01a8da40a4d8b105aef97c20c4b31b2d687dbc5ecf9d5e63c3289a08be779aae"
+      sha256 "4bf6d4105c7f4878b659af4a073354bf501b8a2e65d06434140d3fc10a81a46e"
     else
       url "https://github.com/ZenMicro-Tech/skillforge/releases/download/v#{version}/skillforge-x86_64-apple-darwin"
-      sha256 "b7e4ff6d80c6ee1541cb32b50204a36acde9171ffdfd1f6f833db3ce28137a7e"
+      sha256 "665ee90b97951d5d927ba36c19c1829a92eec50ba533920bd07850eb3cf68b7f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/ZenMicro-Tech/skillforge/releases/download/v#{version}/skillforge-aarch64-unknown-linux-gnu"
-      sha256 "a3dfb3d907b590a8ef6385f52c04e31aa9a2912bb465d57b395db42f5ccaabde"
+      sha256 "9f5004c5ce17869bf31b945fe65c5315bda3e46d12fc0b3ea3b817c3da3a9799"
     else
       url "https://github.com/ZenMicro-Tech/skillforge/releases/download/v#{version}/skillforge-x86_64-unknown-linux-gnu"
-      sha256 "7c52dfa23984106423a558f3709de132f03f9a3c885624d9743e0b6a3389ff4e"
+      sha256 "03bb34bb0f0afee7f958f3d313457c280c9db30c836bedc88216e2bbc37aa460"
     end
   end
 
